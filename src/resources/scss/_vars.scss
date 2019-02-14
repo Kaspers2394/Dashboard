@@ -47,10 +47,10 @@ $color-dark: (
   3: #303030,
   4: #424242
 );
+
 @function color-dark($key: 3) {
   @return map-get($color-dark, $key);
 }
-
 
 // Color theme.
 $color-theme: (
@@ -59,8 +59,23 @@ $color-theme: (
   3: #32333B,
   4: #0EBEFF
 );
+
 @function color-theme($key) {
   @return map-get($color-theme, $key);
+}
+
+@font-face {
+    font-family: 'Frutiger Light';
+    src:    
+    // url('myfont.woff2') format('woff2'),
+    url('../fonts/FrutigerLTStd-Light.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Frutiger Black';
+    src:    
+    // url('myfont.woff2') format('woff2'),
+    url('../fonts/FrutigerLTStd-UltraBlack.woff') format('woff');
 }
 
 /*
