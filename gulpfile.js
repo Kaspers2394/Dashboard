@@ -205,7 +205,7 @@ gulp.task('sitemap', function () {
             read: false
         })
         .pipe(sitemap({
-            siteUrl: 'http://www.ubuntu-conference-copenhagen.dk'
+            siteUrl: ''
         }))
         .pipe(gulp.dest('./dist'));
 });
@@ -215,7 +215,7 @@ gulp.task('sitemap', function () {
 // gulp.task('sass', ['sasstoscss'], function() {
 // gulp.task('sass', ['sass-lint'], function () {
 gulp.task('sass', function () {
-    return gulp.src(['src/scss/**/*.scss'])
+    return gulp.src(['src/resources/scss/**/*.scss'])
         .pipe(plumber())
         .pipe(sourcemaps.init())
         .pipe(sass({
@@ -226,7 +226,7 @@ gulp.task('sass', function () {
             fontMagician() // Automaticly gets all fonts from https://fonts.google.com/
         ]))
         .pipe(sourcemaps.write("./maps"))
-        .pipe(gulp.dest("src/css"))
+        .pipe(gulp.dest("src/resources/css"))
         .pipe(browserSync.stream());
 });
 
@@ -249,7 +249,7 @@ var sassDocOptions = {
 };
 
 gulp.task('sassdoc', function () {
-    return gulp.src(['src/scss/**/*.scss'])
+    return gulp.src(['src/resources/scss/**/*.scss'])
         .pipe(plumber())
         .pipe(sassdoc(sassDocOptions))
     // .pipe(gulp.dest("./dist/docs")) // Dont pipe the destination, use config var instead.
@@ -257,7 +257,7 @@ gulp.task('sassdoc', function () {
 
 // Compile Sass & Inject Into Browser
 gulp.task('sass-prod', function () {
-    return gulp.src(['src/scss/**/*.scss'])
+    return gulp.src(['src/resources/scss/**/*.scss'])
         .pipe(plumber())
         .pipe(sass({
             outputStyle: 'compressed',
@@ -271,8 +271,7 @@ gulp.task('sass-prod', function () {
                 browsers: ['last 9 versions', '> 5%', 'ie 8', 'ie 7'],
             }),
             fontMagician()
-        ]))
-        
+        ]))  
         .pipe(gulp.dest("dist/css"))
         .pipe(browserSync.stream());
 });
@@ -298,10 +297,10 @@ gulp.task('htmlval-prod', function () {
 gulp.task('serve', ['sass'], function () {
     // console.log('')
     browserSync.init({
-        server: "./src"
+        server: "src"
     });
 
-    gulp.watch(['src/scss/**/*.scss'], ['sass']);
+    gulp.watch(['src/resources/scss/**/*.scss'], ['sass']);
     gulp.watch("src/*.html").on('change', browserSync.reload);
 });
 
@@ -311,18 +310,18 @@ gulp.task('serve-prod', ['sass-prod'], function () {
         server: "./dist"
     });
 
-    gulp.watch(['src/scss/**/*.scss'], ['sass-prod']);
+    gulp.watch(['src/resources/scss/**/*.scss'], ['sass-prod']);
     gulp.watch("src/*.html").on('change', browserSync.reload);
 });
 
 // Watch Sass & Serve
 gulp.task('compile', ['sass'], function () {
-    gulp.watch(['src/scss/**/*.scss'], ['sass']);
+    gulp.watch(['src/resources/scss/**/*.scss'], ['sass']);
 });
 
 // Watch Sass & Serve
 gulp.task('compile-prod', ['sass-prod'], function () {
-    gulp.watch(['src/scss/**/*.scss'], ['sass-prod']);
+    gulp.watch(['src/resources/scss/**/*.scss'], ['sass-prod']);
 });
 
 // Default Task
