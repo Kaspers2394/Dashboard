@@ -210,7 +210,7 @@ html, body {
 .container__right--bottom div {
   margin-right: 20px;
   padding: 10px;
-  background-color: #666;
+  background-color: #32333B;
   height: calc((80vh)/2);
   display: grid;
   grid-template-columns: 1.5fr 1fr;
