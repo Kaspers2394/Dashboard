@@ -100,50 +100,6 @@ html, body {
   filter: drop-shadow(0px 4px 2px rgba(0, 0, 0, 0.5));
 }
 
-.media-container {
-  height: 100%;
-  width: 50vw;
-  display: flex;
-  padding: 1vw;
-  justify-content: space-around;
-}
-
-.media-container .video {
-  min-height: 100%;
-  height: 100%;
-}
-
-.media-container img {
-  max-width: 18vw;
-}
-
-.media-container .iframe-container {
-  width: 200vw;
-}
-
-.media-container .iframe-container iframe {
-  width: 100%;
-  height: 100%;
-}
-
-.media-container .description {
-  margin-left: 1vw;
-  display: grid;
-  grid-auto-rows: auto max-content 1fr;
-  background: #202125;
-  padding: 1vw;
-}
-
-.media-container .description p {
-  max-width: 100%;
-}
-
-.media-container .description .qr-code {
-  height: 3vw;
-  max-width: 100%;
-  margin: 0 auto;
-}
-
 .container__left {
   padding: 10px;
 }
@@ -188,6 +144,50 @@ html, body {
 
 .container__left > section section svg:nth-of-type(5n+4) > g > path {
   fill: #5979C5;
+}
+
+.media-container {
+  height: 100%;
+  width: 50vw;
+  display: flex;
+  padding: 1vw;
+  justify-content: space-around;
+}
+
+.media-container .video {
+  min-height: 100%;
+  height: 100%;
+}
+
+.media-container img {
+  max-width: 18vw;
+}
+
+.media-container .iframe-container {
+  width: 200vw;
+}
+
+.media-container .iframe-container iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.media-container .description {
+  margin-left: 1vw;
+  display: grid;
+  grid-auto-rows: auto max-content 1fr;
+  background: #202125;
+  padding: 1vw;
+}
+
+.media-container .description p {
+  max-width: 100%;
+}
+
+.media-container .description .qr-code {
+  height: 3vw;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=maps/main.css.map */
