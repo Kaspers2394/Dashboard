@@ -144,4 +144,50 @@ html, body {
   margin: 0 auto;
 }
 
+.container__left {
+  padding: 10px;
+}
+
+.container__left > section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 4.5vh auto;
+  gap: 5px;
+}
+
+.container__left > section header {
+  grid-column: 1/3;
+  font-size: 24px;
+  background-color: #202125;
+}
+
+.container__left > section section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.container__left > section section svg text {
+  font-size: 0.7rem;
+}
+
+.container__left > section section svg:nth-of-type(5n+1) > g > path {
+  fill: #79A92C;
+}
+
+.container__left > section section svg:nth-of-type(5n+2) > g > path {
+  fill: #901F93;
+}
+
+.container__left > section section svg:nth-of-type(5n+3) > g > path {
+  fill: #DC383D;
+}
+
+.container__left > section section svg:nth-of-type(5n+0) > g > path {
+  fill: #aaa;
+}
+
+.container__left > section section svg:nth-of-type(5n+4) > g > path {
+  fill: #5979C5;
+}
+
 /*# sourceMappingURL=maps/main.css.map */
