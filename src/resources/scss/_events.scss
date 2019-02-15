@@ -1,0 +1,37 @@
+.container__left {
+  padding: 10px;
+  &>section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: $header-height/2 auto;
+    gap:5px;
+    header{
+      grid-column: 1/3;
+      font-size: 24px;
+      background-color: color-theme(2);
+    }
+    section{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+
+      svg text{
+        font-size: 0.7rem;
+      }
+      svg:nth-of-type(5n+1) >g>path{
+        fill:color-brand(dm);
+      }
+      svg:nth-of-type(5n+2) >g>path{
+        fill:color-brand(mg);
+      }
+      svg:nth-of-type(5n+3) >g>path{
+        fill:color-brand(wu);
+      }
+      svg:nth-of-type(5n+0) >g>path{
+        fill:#aaa;
+      }
+      svg:nth-of-type(5n+4) >g>path{
+        fill:color-brand(gt);
+      }
+    }
+  }
+}
