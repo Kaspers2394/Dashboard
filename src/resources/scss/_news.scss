@@ -1,0 +1,35 @@
+.container__right--bottom{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: $header-height/2;
+  gap: 10px;
+
+  header{
+    font-size: 24px;
+    grid-column: 1/3;
+    height: $header-height/2;
+    padding: 10px;
+  }
+  div{
+    margin-right: 20px;
+    padding: 10px;
+    background-color: #666;
+    height: calc((80vh)/2);
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: 3fr 1fr;
+    gap: 5px;
+
+    img{
+      width: 100%;
+    }
+    p:last-child{
+      grid-column: 1/3;
+      font-size: 1rem;
+    }
+    h3{
+      width: 80%;
+      font-size: 2rem;
+    }
+  }
+}
