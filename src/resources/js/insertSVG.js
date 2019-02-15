@@ -1,14 +1,14 @@
 svgRight = `<svg class="svgRight" transform="translate(-30, 0)" width="364" height="47" viewBox="0 0 364 47" fill="none" xmlns="http://www.w3.org/2000/svg">
     <g filter="url(#filter0_d)">
     <path class="filler" d="M359.307 38.3868H5.45613L75.118 1.40709H359.307V38.3868Z" fill="#0EBEFF"/>
-    <g style="mix-blend-mode:color-burn">
-    <path d="M184 39L78.5 1.53939H267L184 39Z" fill="#8A8A8A"/>
+    <g style="mix-blend-mode:color-burn"  opacity="0.5">
+    <path d="M184 39L78.5 1.53939H267L184 39Z" fill="#888"/>
     </g>
     <g style="mix-blend-mode:color-burn" opacity="0.5">
-    <path d="M266.816 1.62635L360 38L186 38L266.816 1.62635Z" fill="#A1A1A1"/>
+    <path d="M266.816 1.62635L360 38L186 38L266.816 1.62635Z" fill="#bbb"/>
     </g>
-    <g style="mix-blend-mode:color-burn">
-    <path d="M75.5 0.500005L183 38.5L4.50005 38.5L75.5 0.500005Z" fill="#6E6E6E"/>
+    <g style="mix-blend-mode:color-burn"  opacity="0.5">
+    <path d="M75.5 0.500005L183 38.5L4.50005 38.5L75.5 0.500005Z" fill="#666"/>
     </g>
     <text x="320.307" y="20" fill="white">Dato</text>
     <text x="160" y="20" fill="white">Hold</text>
@@ -31,14 +31,14 @@ svgRight = `<svg class="svgRight" transform="translate(-30, 0)" width="364" heig
 svgLeft = `<svg class="svgLeft" transform="scale(-1,-1) translate(-30, 10)" width="364" height="47" viewBox="0 0 364 47" fill="none" xmlns="http://www.w3.org/2000/svg">
     <g filter="url(#filter0_d)">
     <path class="filler" d="M359.307 38.3868H5.45613L75.118 1.40709H359.307V38.3868Z" fill="#0EBEFF"/>
-    <g style="mix-blend-mode:color-burn">
-    <path d="M184 39L78.5 1.53939H267L184 39Z" fill="#8A8A8A"/>
+    <g style="mix-blend-mode:color-burn" opacity="0.5">
+    <path d="M184 39L78.5 1.53939H267L184 39Z" fill="#888"/>
     </g>
     <g style="mix-blend-mode:color-burn" opacity="0.5">
-    <path d="M266.816 1.62635L360 38L186 38L266.816 1.62635Z" fill="#A1A1A1"/>
+    <path d="M266.816 1.62635L360 38L186 38L266.816 1.62635Z" fill="#bbb"/>
     </g>
-    <g style="mix-blend-mode:color-burn">
-    <path d="M75.5 0.500005L183 38.5L4.50005 38.5L75.5 0.500005Z" fill="#6E6E6E"/>
+    <g style="mix-blend-mode:color-burn" opacity="0.5">
+    <path d="M75.5 0.500005L183 38.5L4.50005 38.5L75.5 0.500005Z" fill="#666"/>
     </g>
     <text transform="scale(-1,-1) translate(-675,-30)" x="320.307" y="20" fill="white">Dato</text>
     <text transform="scale(-1,-1) translate(-460,-45)" x="175" y="25" fill="white">Hold</text>

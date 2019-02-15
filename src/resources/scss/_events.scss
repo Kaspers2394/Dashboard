@@ -1,21 +1,20 @@
 .container__left {
   zoom: 1.25;
-  padding: 10px;
   &>section{
+    margin: 2%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: $header-height/2 auto;
     gap:5px;
     header{
       grid-column: 1/3;
-      font-size: 24px;
+      font-size: 1.3rem;
       padding: $header-height/2/4;
       background-color: color-theme(2);
     }
     section{
       display: grid;
       grid-template-columns: 1fr 1fr;
-
       svg text{
         font-size: 0.7rem;
       }
